@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GOLD RUSH DUO CUP – S1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TAP TO CONTINUE OVERLAY -->
+  <div id="intro-overlay">
+    <div class="intro-content">
+      <h1>GOLD RUSH DUO CUP – S1</h1>
+      <p>Duo • Battle Royale • Mobile Only • India</p>
+      <button id="enter-site">TAP TO CONTINUE</button>
+      <small>Best with sound on. Bring your clutch aim.</small>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE WRAPPER (HIDDEN UNTIL TAP) -->
+  <div id="page-wrapper" class="hidden">
+
+    <!-- LIMITED SEATS POPUP -->
+    <div id="tournament-popup" class="popup hidden">
+      <div class="popup-inner">
+        <button class="popup-close" id="popup-close">✕</button>
+        <h2>GOLD RUSH DUO CUP – S1</h2>
+        <p class="popup-sub">Duo • Battle Royale • Mobile Only • All India</p>
+
+        <div class="popup-grid">
+          <div>
+            <p>💸 <strong>Entry Fee:</strong> ₹100 per duo team</p>
+            <p>🎯 <strong>Slots:</strong> 24 Duo teams only</p>
+            <p>🎖 <strong>Rank:</strong> Gold+ required</p>
+          </div>
+          <div>
+            <p>🥇 <strong>1st:</strong> ₹1300 (Booyah + 8 kills)</p>
+            <p>🥈 <strong>2nd:</strong> ₹400</p>
+            <p>🥉 <strong>3rd:</strong> ₹159</p>
+          </div>
+        </div>
+
+        <p class="popup-warning">
+          ⚠ Limited seats – slot tabhi lock hoga jab payment + registration form dono complete ho.
+        </p>
+
+        <div class="popup-actions">
+          <button id="popup-register">Register My Duo</button>
+          <button id="popup-details" class="secondary">View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header id="hero">
+      <div class="hero-top">
+        <div class="hero-text">
+          <h1>GOLD RUSH DUO CUP – S1</h1>
+          <p class="tagline">Duo • Battle Royale • Mobile Only • All India</p>
+
+          <div class="hero-badges">
+            <span>01 Dec</span>
+            <span>8:00 PM IST</span>
+            <span>Bermuda • 1 Match</span>
+          </div>
+
+          <div class="hero-cta">
+            <button id="hero-register">Register My Duo</button>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <button id="audio-toggle" class="audio-btn">🔈 Music Off</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- TOURNAMENT DETAILS -->
+    <section id="tournament-details" class="section">
+      <div class="section-header">
+        <h2>Tournament Overview</h2>
+        <p>One final match. 24 duo teams. Booyah or watch.</p>
+      </div>
+
+      <div class="details-grid">
+        <div class="details-text">
+          <ul>
+            <li><strong>Type:</strong> Battle Royale – Duo</li>
+            <li><strong>Map:</strong> Bermuda (only 1 final custom match)</li>
+            <li><strong>Rank Requirement:</strong> Gold or above</li>
+            <li><strong>Slots:</strong> 24 Duo teams (first come, first serve)</li>
+            <li><strong>Entry Fee:</strong> ₹100 per team</li>
+            <li><strong>Date & Time:</strong> 01 December • 8:00 PM (IST)</li>
+            <li><strong>Server:</strong> India – All over India players allowed</li>
+            <li><strong>Device:</strong> Mobile only (no PC / emulator)</li>
+          </ul>
+          <p class="details-desc">
+            Gold Rush Duo Cup – S1 ek single Bermuda match ka high-pressure tournament hai
+            jahan sirf 24 duo teams ladengi Booyah + 8 kills ke liye. No excuses. No second chances.
+          </p>
+        </div>
+
+        <div class="details-image">
+          <div class="image-card">
+            <p class="image-label">Battle Royale – Bermuda</p>
+            <img src="br.png" alt="Battle Royale Bermuda" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIZE SECTION -->
+    <section id="prizes" class="section">
+      <div class="section-header">
+        <h2>Prize Pool</h2>
+        <p>Play smart, shoot sharp, get paid.</p>
+      </div>
+
+      <div class="prize-grid">
+        <!-- 1st -->
+        <article class="prize-card">
+          <h3>🥇 1st Place – Champions</h3>
+          <div class="prize-image-wrap">
+            <img src="1stprize.png" alt="1st Prize" />
+          </div>
+          <p class="prize-amount">₹1300</p>
+          <p class="prize-text">Booyah + minimum 8 team kills required.</p>
+          <small>UPI payout within 24 hours after result check.</small>
+        </article>
+
+        <!-- 2nd -->
+        <article class="prize-card">
+          <h3>🥈 2nd Place – Runners Up</h3>
+          <div class="prize-image-wrap">
+            <img src="2ndprize.png" alt="2nd Prize" />
+          </div>
+          <p class="prize-amount">₹400</p>
+          <p class="prize-text">Clean second place finish in final standings.</p>
+          <small>UPI payout after result confirmation.</small>
+        </article>
+
+        <!-- 3rd -->
+        <article class="prize-card">
+          <h3>🥉 3rd Place – Still Deadly</h3>
+          <div class="prize-image-wrap">
+            <img src="3rdprize.png" alt="3rd Prize" />
+          </div>
+          <p class="prize-amount">₹159</p>
+          <p class="prize-text">For the duo that almost made it.</p>
+          <small>Respectable podium finish.</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="section">
+      <div class="section-header">
+        <h2>Rules & Format</h2>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule-block">
+          <h3>Format</h3>
+          <ul>
+            <li>Battle Royale – Duo custom room.</li>
+            <li>Map: <strong>Bermuda</strong> – only 1 final match.</li>
+            <li>Server: <strong>India</strong>.</li>
+            <li>Rank requirement: <strong>Gold or above</strong>.</li>
+            <li>Max slots: <strong>24 Duo teams</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <h3>Eligibility</h3>
+          <ul>
+            <li>Players from all over India can join.</li>
+            <li><strong>Mobile devices only</strong> – no PC / emulator allowed.</li>
+            <li>Team = exactly 2 players (Duo).</li>
+            <li>IGN & UID must match the details submitted in the form.</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <h3>Win & Prizes</h3>
+          <ul>
+            <li>Winners decided by normal Battle Royale result (last alive = Booyah).</li>
+            <li>1st prize ke liye: <strong>Booyah + at least 8 total team kills</strong> required.</li>
+            <li>Agar Booyah team 8 kills nahi laati, prize distribution par organizer ka final decision hoga.</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <h3>Match Discipline</h3>
+          <ul>
+            <li>Room ID & Password match se pehle WhatsApp pe captain ko bheja jayega.</li>
+            <li>Players must be ready and in lobby <strong>15 min before</strong> start time.</li>
+            <li>Lag / ping / DC issues ke liye rematch nahi hoga (except global server issue).</li>
+            <li>Wrong IGN / UID or sharing room ID = disqualification.</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <h3>Re-Entry</h3>
+          <ul>
+            <li>Slot available hone tak re-entry allowed hai.</li>
+            <li>Har re-entry = new registration + new payment.</li>
+            <li>Room lock hone ke baad new entries allowed nahi.</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <h3>Final Authority</h3>
+          <ul>
+            <li>Disputes, hacker suspicion, rule breaks – sab me organizer ka decision final hoga.</li>
+            <li>Abuse / drama / toxicity = ignore + possible ban from future events.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIR PLAY -->
+    <section id="fair-play" class="section">
+      <div class="fair-card">
+        <h2>Fair Play Policy 🛡</h2>
+        <p>
+          Ye tournament timepass custom room nahi, proper clutch competition hai.
+        </p>
+        <ul>
+          <li>❌ No hacks, scripts, or third-party cheating apps.</li>
+          <li>❌ No emulator / PC – <strong>mobile only</strong>.</li>
+          <li>❌ No teaming, ghosting, or stream sniping.</li>
+          <li>❌ Fake payment proof / fake details = instant ban.</li>
+        </ul>
+        <p>
+          Agar gameplay suspicious laga to hum clips, screenshots, POV, or device info demand kar sakte hain.
+          Cooperate nahi kiya = direct disqualification.
+        </p>
+        <p class="fair-tagline">
+          Simple rule: <strong>Play fair, take prize. Cheat once, get banned forever.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- ORGANIZER SECTION -->
+    <section id="organizer" class="section">
+      <div class="section-header">
+        <h2>Organizer & Verification</h2>
+      </div>
+
+      <div class="organizer-grid">
+        <div class="organizer-text">
+          <h3>Host: Sahan Das</h3>
+          <p>
+            17 y/o Free Fire player hosting community tournaments for Indian players.
+            Small host, serious rules, real payouts.
+          </p>
+          <ul>
+            <li>🎮 Role: Tournament Host & Organizer</li>
+            <li>📍 From: India</li>
+            <li>💬 Payout: UPI within 24 hours after match result.</li>
+          </ul>
+          <p class="organizer-note">
+            To keep things transparent, a verification ID preview is shown. Sensitive details hidden for safety.
+          </p>
+        </div>
+
+        <div class="organizer-id">
+          <div class="image-card">
+            <p class="image-label">Organizer ID Preview</p>
+            <img src="orgid.jpg" alt="Organizer ID Preview" />
+            <small>Some details may be blurred / hidden for privacy.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section id="registration" class="section">
+      <div class="section-header">
+        <h2>Register Your Duo</h2>
+        <p>Slots: 24 teams • Entry Fee: ₹100 per team • Rank: Gold+ • Mobile only</p>
+      </div>
+
+      <form id="form" class="form-card">
+        <!-- TEAM INFO -->
+        <div class="form-group">
+          <h3>Team Info</h3>
+          <label for="team_name">Team Name *</label>
+          <input type="text" id="team_name" name="Team Name" required />
+        </div>
+
+        <!-- CAPTAIN DETAILS -->
+        <div class="form-group">
+          <h3>Captain Details</h3>
+
+          <label for="captain_name">Captain Name *</label>
+          <input type="text" id="captain_name" name="Captain Name" required />
+
+          <label for="captain_ign">Captain IGN (In-Game Name) *</label>
+          <input type="text" id="captain_ign" name="Captain IGN" required />
+
+          <label for="captain_uid">Captain Free Fire UID *</label>
+          <input type="text" id="captain_uid" name="Captain UID" required />
+
+          <label for="captain_whatsapp">Captain WhatsApp Number *</label>
+          <input
+            type="tel"
+            id="captain_whatsapp"
+            name="Captain WhatsApp"
+            placeholder="+91xxxxxxxxxx"
+            required
+          />
+
+          <label for="captain_city">City / State</label>
+          <input type="text" id="captain_city" name="Captain City" />
+        </div>
+
+        <!-- PLAYER 2 DETAILS -->
+        <div class="form-group">
+          <h3>Player 2 Details</h3>
+
+          <label for="p2_name">Player 2 Name *</label>
+          <input type="text" id="p2_name" name="Player 2 Name" required />
+
+          <label for="p2_ign">Player 2 IGN *</label>
+          <input type="text" id="p2_ign" name="Player 2 IGN" required />
+
+          <label for="p2_uid">Player 2 UID *</label>
+          <input type="text" id="p2_uid" name="Player 2 UID" required />
+        </div>
+
+        <!-- GAME INFO -->
+        <div class="form-group">
+          <h3>Game Info</h3>
+          <p><strong>Mode:</strong> Duo – Battle Royale (Custom Room)</p>
+          <p><strong>Map:</strong> Bermuda (1 final match)</p>
+          <p><strong>Rank:</strong> Gold or above</p>
+          <p><strong>Device:</strong> Mobile only (no PC / emulator)</p>
+        </div>
+
+        <!-- PAYMENT INFO INSIDE FORM (TXN ID) -->
+        <div class="form-group">
+          <h3>Payment Confirmation</h3>
+          <p>
+            Pehle UPI se payment complete karo, phir yahan apna
+            <strong>UPI Transaction ID / UTR number</strong> daalo.
+          </p>
+
+          <label for="upi_txn">UPI Transaction ID / UTR Number *</label>
+          <input type="text" id="upi_txn" name="UPI Transaction ID" required />
+
+          <label for="payment_ss">Payment Screenshot (optional)</label>
+          <input
+            type="file"
+            id="payment_ss"
+            name="Payment Screenshot"
+            accept="image/*"
+          />
+        </div>
+
+        <!-- HUMAN CHECK -->
+        <div class="form-group">
+          <h3>Are You Human?</h3>
+          <p>Are you a real player? Solve this:</p>
+          <label for="human-answer">6 + 3 = ? *</label>
+          <input
+            type="number"
+            id="human-answer"
+            name="Human Check Answer"
+            required
+          />
+        </div>
+
+        <!-- AGREEMENTS -->
+        <div class="form-group">
+          <h3>Rules & Agreements</h3>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree_rules" required />
+            <span>I have read all the tournament rules.</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree_fairplay" required />
+            <span>I understand hacking / teaming / stream sniping will lead to disqualification.</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree_prize" required />
+            <span>I understand 1st prize needs Booyah + at least 8 team kills.</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree_final" required />
+            <span>I agree that the organizer's decision will be final.</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree_whatsapp" required />
+            <span>I agree to receive match updates on WhatsApp.</span>
+          </label>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="form-actions">
+          <button type="submit">Lock My Duo Slot</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- PAYMENT INFO (SEPARATE SECTION) -->
+    <section id="payment-info" class="section">
+      <div class="section-header">
+        <h2>Payment Information</h2>
+      </div>
+
+      <div class="payment-grid">
+        <div class="payment-text">
+          <p><strong>Entry Fee:</strong> ₹100 per duo team</p>
+          <p>
+            Pay via UPI to:<br />
+            <strong>UPI ID: 6003621517@ibl</strong>
+          </p>
+          <p>
+            Pehle payment karo, phir registration form me apna
+            <strong>UPI Transaction ID</strong> sahi-sahi likho.
+          </p>
+          <p>
+            All registration details are sent to the organizer at:<br />
+            📧 <strong>sayondaspritamdas@gmail.com</strong>
+          </p>
+          <p class="warning-text">
+            Fake payment proof / wrong UTR = instant ban from this and future cups.
+          </p>
+        </div>
+
+        <div class="payment-qr">
+          <div class="image-card">
+            <p class="image-label">Scan & Pay (UPI)</p>
+            <img src="qr.png" alt="UPI QR Code" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>© 2025 GOLD RUSH DUO CUP – S1 • Hosted by Sekhar</p>
+      <p>Play clean. Aim dirty.</p>
+    </footer>
+  </div>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bg-audio" src="bg.mp3" loop></audio>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
